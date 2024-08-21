@@ -1,0 +1,12 @@
+URL là dạng thông dụng nhất của URI
+(Uniform Resource Identifier), ngoài
+xác định tài nguyên, URL thường chỉ
+ra cách để truy cập/làm việc tài
+nguyên
+• Cú pháp URL
+• protocol://userInfo@host:port/path?quer
+y#fragment
+• URL tương đối vs URL tuyệt đối
+• Java cung cấp lớp
+• java.net.URL
+• Java.net.URLConnection
