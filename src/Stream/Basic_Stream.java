@@ -126,7 +126,7 @@ public class Basic_Stream {
         }
     }
 
-    // Luồng ký tự: Bọc quanh 1 FileWriter. Ghi văn bản vào 1 tệp ký tự .txt / stream
+    // Luồng ký tự: Bọc quanh 1 FileWriter / OutputStreamWriter. Ghi văn bản vào 1 tệp ký tự .txt / stream
     public static void Buffered_Writer() throws IOException {
         FileWriter fw = new FileWriter(path2);
         BufferedWriter bw = new BufferedWriter(fw);
