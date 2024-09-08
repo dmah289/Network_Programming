@@ -3,9 +3,9 @@ package Thread;
 public class Consumer extends Thread {
 
     private SharedData sharedData;
-    private String order;
+    private int order;
 
-    public Consumer(SharedData data, String order){
+    public Consumer(SharedData data, int order){
         sharedData = data;
         this.order = order;
     }
@@ -14,7 +14,7 @@ public class Consumer extends Thread {
     public void run() {
         for(int i = 0 ; i < 10 ; i++){
             try {
-                sharedData.consume(order);
+                sharedData.consume1(order);
                 Thread.sleep(1000);
             } catch (InterruptedException e) {
                 throw new RuntimeException(e);
